@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('rekam_medis', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pasiens_id')->constrained();
+            $table->foreignId('dokters_id')->constrained();
+            $table->text('kondisi');
+            $table->double('suhu', 4, 2);
+            $table->string('file_resep');
             $table->timestamps();
         });
     }
