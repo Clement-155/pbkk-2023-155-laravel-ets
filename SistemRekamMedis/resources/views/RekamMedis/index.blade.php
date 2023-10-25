@@ -29,7 +29,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <table class="table table-bordered">
+                        <table class="table table-bordered" id="myTable">
                             <thead>
                                 <tr>
                                     <th class="col-1" scope="col">Id Pasien</th>
